@@ -1,0 +1,253 @@
+
+/* Estilo para el logo dentro del header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* Color suave de fondo */
+  border-bottom: 5px solid #ddd; /* Línea sutil abajo */
+  height: 60px;
+}
+
+/* Imagen del logo */
+header img {
+  height: 150px;       /* Altura del logo */
+  width: auto;        /* Mantiene proporción */
+  margin-right: 300px; /* Espacio a la derecha */
+  margin-left: 100px;  /*Epacio a la izquierda */
+}
+
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333333;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Formulario */
+form {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alineación horizontal para los campos del formulario */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-row label {
+  display: block;
+  width: calc(14.28% - 20px); /* Ajustamos el tamaño de cada campo */
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Botón check más pequeño */
+form .check-button {
+  background-color: green;
+  color: white;
+  font-size: 18px; /* Reducimos el tamaño del botón */
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+form .check-button:hover {
+  background-color: darkgreen;
+}
+
+/* Tabla de movimientos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+td {
+  background-color: #fff;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.boton-estado {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 80px;
+  font-size: 0.9em;
+}
+
+
+/* Botones de estado */
+.boton-estado {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 80px;
+  font-size: 0.9em;
+}
+
+.boton-estado.verde {
+  background-color: green;
+  color: white;
+}
+
+.boton-estado:hover {
+  opacity: 0.8;
+}
+
+/* Eliminar el color gris al pasar el mouse */
+.boton-estado:focus {
+  outline: none;
+}
+
+/* Colores para los estados */
+.boton-estado {
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+.boton-estado.pendiente {
+  background-color: transparent;
+}
+
+.boton-estado.pagado {
+  background-color: green;
+  color: white;
+}
+
+.boton-estado.cobrado {
+  background-color: green;
+  color: white;
+}
+
+.resumen-contenedor {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+  max-width: 1000px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.resumen-cuadro {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.resumen-cuadro .titulo {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.resumen-cuadro .monto {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resumen-cuadro .icono {
+  width: 40px;
+  height: 40px;
+}
+
+.ingresos {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.egresos {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+.disponible {
+  background-color: #ecf0f1;
+  color: #000000;
+}
+
+.resumen-cuadro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}

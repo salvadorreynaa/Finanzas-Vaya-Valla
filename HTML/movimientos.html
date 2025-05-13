@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Movimientos</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="icon" href="/IMG/favicon.ico" >
+</head>
+<body>
+  <header>
+  <!-- Barra de navegación -->
+   <a href="https://vayapublicidad.com/" target="_blank"><img src="/IMG/logo.png" alt="logo"></a>
+  <nav>
+    <ul>
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/HTML/movimientos.html">Movimientos</a></li>
+      <li><a href="/HTML/trabajos.html">Trabajos</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <h1>Movimientos Registrados</h1>
+
+  <div style="text-align: center; margin: 20px;">
+    <label for="filtroMes">Filtrar por mes:</label>
+    <select id="filtroMes">
+      <option value="Todos">Todos</option>
+      <option value="Enero">Enero</option>
+      <option value="Febrero">Febrero</option>
+      <option value="Marzo">Marzo</option>
+      <option value="Abril">Abril</option>
+      <option value="Mayo">Mayo</option>
+      <option value="Junio">Junio</option>
+      <option value="Julio">Julio</option>
+      <option value="Agosto">Agosto</option>
+      <option value="Septiembre">Septiembre</option>
+      <option value="Octubre">Octubre</option>
+      <option value="Noviembre">Noviembre</option>
+      <option value="Diciembre">Diciembre</option>
+    </select>
+
+    <label for="filtroAño">Año:</label>
+    <select id="filtroAño">
+      <option value="Todos">Todos</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+      <option value="2028">2028</option>
+      <option value="2029">2029</option>
+      <option value="2030">2030</option>
+    </select>
+  </div>
+
+  <table id="tabla-movimientos">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Descripción</th>
+        <th>Cliente</th>
+        <th>Fecha</th>
+        <th>Mes</th>
+        <th>Año</th>
+        <th>Monto</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody id="lista-movimientos">
+      <!-- JS inserta los datos -->
+    </tbody>
+  </table>
+
+  <div class="resumen-contenedor">
+    <div class="resumen-cuadro ingresos">
+      <p class="titulo">Total Ingresos</p>
+      <p id="total-ingresos" class="monto">S/ 0.00</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Billetera" class="icono">
+    </div>
+    <div class="resumen-cuadro egresos">
+      <p class="titulo">Total Egresos</p>
+      <p id="total-egresos" class="monto">S/ 0.00</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/925/925212.png" alt="Moneda" class="icono">
+    </div>
+    <div class="resumen-cuadro disponible">
+      <p class="titulo">Dinero Disponible</p>
+      <p id="dinero-disponible" class="monto">S/ 0.00</p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Alcancía" class="icono">
+    </div>
+  </div>
+
+  <script src="/JS/movimientos.js"></script>
+</body>
+</html>

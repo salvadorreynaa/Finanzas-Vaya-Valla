@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Trabajos - Vaya Valla Publicidad</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="icon" href="/IMG/favicon.ico" >
+
+</head>
+<body>
+  <header>
+    <a href="https://vayapublicidad.com/" target="_blank"><img src="/IMG/logo.png" alt="logo"></a>
+   <nav>
+     <ul>
+       <li><a href="/index.html">Inicio</a></li>
+       <li><a href="/HTML/movimientos.html">Movimientos</a></li>
+       <li><a href="/HTML/trabajos.html">Trabajos</a></li>
+     </ul>
+   </nav>
+  </header>
+
+
+
+  <h1>Gestión de Trabajos</h1>
+
+  <!-- Formulario para registrar un nuevo trabajo -->
+  <form id="formulario-trabajo">
+    <label>
+      Cliente:
+      <input type="text" id="cliente" required>
+    </label><br>
+    
+    <label>
+      Descripción del trabajo:
+      <input type="text" id="descripcion" required>
+    </label><br>
+
+    <label>
+      Monto total del contrato (S/):
+      <input type="number" id="monto-total" step="0.01" required>
+    </label><br>
+
+    <label>
+      Porcentaje de anticipo (%):
+      <input type="number" id="porcentaje-anticipo" min="0" max="100" required>
+    </label><br>
+
+    <label>
+      Fecha
+      <input type="text" id="fecha-inicio">
+    </label><br>
+
+      <!-- Filtros para Mes y Año -->
+  <label for="filtro-mes">Seleccionar Mes:</label>
+  <select id="filtro-mes">
+    <option value="todos">Selecciona Mes</option>
+    <option value="Enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+  </select>
+
+    <button type="submit">Registrar Trabajo</button>
+  </form>
+
+  <h2>Trabajos Registrados</h2>
+  <ul id="lista-trabajos"></ul>
+
+  <script src="/JS/trabajos.js"></script>
+</body>
+</html>
